@@ -9,3 +9,12 @@ function botao(){
 
     console.log(typeof(image))
 }
+
+function menu() {
+    var x = document.getElementById("menu-secondary");
+    if (x.style.display === "flex") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "flex";
+    }
+  }

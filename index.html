@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="index.js"></script>
 
@@ -18,22 +19,38 @@
 <body>
     
     <header>
-        <span>Image Generator</span>
-        
         <nav>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Features</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
+        <div id="header-container">
+           
+                <div id="menu-container">
+                    <span>Image Generator</span>
+        
+                
+                    <ul id="menu-primary">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+
+                    <button class="menu-icon" onclick="menu()"><i class="fa fa-bars fa-2x"></i></button>
+                </div>
+                <div id="menu-secondary">        
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Features</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                </div>
+            
+        </div>
         </nav>
     </header>
+    
     <main>
         <div id="container">
             <article>
                 <h1>Discover amazing <br> images</h1>
-                <p>Free pics for your project</p> 
-                       
+                <p>Free pics for your project</p>        
             </article>
         
             <img src="assets/counting-stars.svg" alt="Teams">

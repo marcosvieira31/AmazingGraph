@@ -6,7 +6,7 @@ Gerador de imagens aleatórias
 
 ## Instalação
 
-
+Não é necessário instalação, acesse por este [link](https://marcosvieira31.github.io/RandomImage/)
 ## Autores
 
 - [Marcos Vieira](https://www.github.com/marcosvieira31)

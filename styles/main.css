@@ -71,6 +71,7 @@ main{
 
 article{
     display: flex;
+    height: 480px;
     flex-direction: column;
     
 }
@@ -129,9 +130,15 @@ li a:hover{
 
 img{
     width: 40rem;
-    height: 31.25rem;
+    height: fit-content;
     object-fit: contain;
     margin-left: 1rem;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+img:hover{
+    transform: scale(1.1);
 }
 
 h1, p{
@@ -179,6 +186,9 @@ p{
         font-size: 93.75%; /*15px*/
                 
     }
+    article{
+        height: auto;
+    }
     img{
         width: 31.5rem;
     }
@@ -213,6 +223,7 @@ p{
     }
     article{
         margin: 0 auto;
+        height: auto;
     }
     h1, p{
         text-align: center;

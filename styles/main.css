@@ -1,12 +1,14 @@
 *{
     margin:0;
+    box-sizing: border-box;
 }
 
 :root{
-    --font-color: white;
+    --font-color: #E1E1E6;
     --background-color: #02A676;
     --primary-color: #005A5B;
     --secondary-color: #007369;
+    --text-color-primary: #3f3d56;
     --menu-color: rgba(0, 115, 105, 0.4);
 }
 
@@ -31,7 +33,9 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding-bottom: 2.5rem;
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
 }
 
 #header-container{
@@ -40,20 +44,15 @@ header{
 
 #menu-container{
     width: 100%;
+    margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-@media(max-width:1275px){
-    main{
-        padding: 0 4rem;
-    }
-    header{
-        padding: 0 10rem;
-        padding-bottom: 2.5rem;
+#menu-container img{
+    width: 9rem;
 
-    }
 }
 
 main{
@@ -105,7 +104,7 @@ li a{
 }
 
 li a:hover{
-    filter: brightness(0.8);
+    filter: brightness(0.75);
 }
 
 #menu-secondary{
@@ -128,21 +127,26 @@ li a:hover{
     filter: brightness(0.9);
 }
 
-img{
+#main-img{
     width: 40rem;
+    margin: 0 auto;
     height: fit-content;
     object-fit: contain;
-    margin-left: 1rem;
     border-radius: 10px;
     transition: 0.3s;
 }
 
-img:hover{
+#img-container{
+    width: 64rem;
+    height: 30rem;
+}
+
+#main-img:hover{
     transform: scale(1.1);
 }
 
 h1, p{
-    color: var(--primary-color);
+    color: var(--text-color-primary);
 }
 
 h1{
@@ -186,17 +190,37 @@ p{
         font-size: 93.75%; /*15px*/
                 
     }
-    article{
-        height: auto;
+    header{
+        max-width: 920px;
     }
-    img{
+    main{
+        max-width: 920px;
+    }
+    article{
+        height: 24rem;
+    }
+    #main-img{
         width: 31.5rem;
+    }
+    #img-container{
+        width: 38rem;
+        height: 24rem;
+    }
+    h1{
+        font-size: 4rem;
+        line-height: 4rem;
     }
 }
 
 @media (max-width: 945px){
     html{
         font-size: 80%; 
+    }
+    header{
+        max-width: 510px;
+    }
+    main{
+        margin-top: 2rem;
     }
     .menu-icon{
         display: block;
@@ -232,18 +256,30 @@ p{
         margin: 0 auto;
         margin-top: 2rem;
     }
-    img{
+    #main-img{
         width: 38rem;
+    }
+    #img-container{
+        width: 38rem;
+        height: 30rem;
+    }
+    #main-img:hover{
+        transform: none;
     }
 }
 
 @media(max-width: 600px){
     html{
-        font-size: 40%;
+        font-size: 60%;
+    }
+    header{
+        max-width: 320px;
+        margin-top: 5rem;
     }
     #header-container{
         display: block;
-        height: 15rem;
+
+        height: 10rem;
         width: 100%;
     }
     #menu-container{
@@ -278,13 +314,16 @@ p{
     #container{
         flex-direction: column;
     }
-    img{
-        width: 50rem;
-        margin-left: 0;
+    #main-img:hover{
+        transform: none;
+    }
+    #img-container{
+        width: 38rem;
+        height: 30rem;
     }
     #bt-start{
         margin: 0 auto;
-        margin-top: 5rem;
+        margin-top: 2rem;
     }
     #container img{
         margin: 0 auto;
